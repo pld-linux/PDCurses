@@ -27,7 +27,7 @@ przebudowanie istniej±cych programów tekstowych korzystaj±cych z
 curses jako natywne aplikacjie X11 po jedynie niewielkich
 podywikacjach. PDCurses dla X11 jest znana tak¿e jako XCurses. Wiêcej
 informacji na temat PDCurses mo¿na znale¼æ na stronie
-//pdcurses.sourceforge.net/ .
+http://pdcurses.sourceforge.net/ .
 
 %prep
 %setup -q
