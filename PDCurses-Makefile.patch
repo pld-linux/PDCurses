@@ -1,0 +1,12 @@
+diff -ur PDCurses-2.6.orig/Makefile.in PDCurses-2.6/Makefile.in
+--- PDCurses-2.6.orig/Makefile.in	2003-01-03 10:46:55.000000000 +0100
++++ PDCurses-2.6/Makefile.in	2004-08-10 19:08:15.109174888 +0200
+@@ -12,7 +12,7 @@
+ VPATH		=@srcdir@
+ prefix		=@prefix@
+ exec_prefix		=@exec_prefix@
+-libdir		=$(exec_prefix)/lib
++libdir		=@libdir@
+ bindir		=$(exec_prefix)/bin
+ includedir		=$(exec_prefix)/include
+ pdcursesdir=./pdcurses
