@@ -24,8 +24,8 @@ PDCurses, visit http://pdcurses.sourceforge.net/ .
 %description -l pl
 PDCurses jest implementacj± biblioteki curses dla X11. Umo¿liwia ona
 przebudowanie istniej±cych programów tekstowych korzystaj±cych z
-curses jako natywne aplikacjie X11 po jedynie niewielkich
-podywikacjach. PDCurses dla X11 jest znana tak¿e jako XCurses. Wiêcej
+curses jako natywne aplikacje X11 po jedynie niewielkich
+modyfikacjach. PDCurses dla X11 jest znana tak¿e jako XCurses. Wiêcej
 informacji na temat PDCurses mo¿na znale¼æ na stronie
 http://pdcurses.sourceforge.net/ .
 
@@ -40,15 +40,17 @@ http://pdcurses.sourceforge.net/ .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README TODO doc
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/*.so
 %{_libdir}/*.a
 %{_includedir}/%{name}/*.h
-%doc README TODO doc/
