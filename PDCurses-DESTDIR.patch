@@ -1,0 +1,41 @@
+--- Makefile.in~	2003-01-03 10:46:55.000000000 +0100
++++ Makefile.in	2003-08-20 05:11:14.000000000 +0200
+@@ -14,7 +14,7 @@
+ exec_prefix		=@exec_prefix@
+ libdir		=$(exec_prefix)/lib
+ bindir		=$(exec_prefix)/bin
+-includedir		=$(exec_prefix)/include
++includedir		=$(exec_prefix)/include/PDCurses
+ pdcursesdir=./pdcurses
+ paneldir=./panel
+ demosdir=./demos
+@@ -39,18 +39,18 @@
+ 	cd tools; $(MAKE) $(MFLAGS) $@
+ 
+ install:
+-	$(INSTALL) -d -m 755 $(libdir)
+-	$(INSTALL) -d -m 755 $(bindir)
+-	$(INSTALL) -d -m 755 $(includedir)
+-	$(INSTALL) -c -m 644 $(srcdir)/curses.h $(includedir)/xcurses.h
++	$(INSTALL) -d -m 755 $(DESTDIR)$(libdir)
++	$(INSTALL) -d -m 755 $(DESTDIR)$(bindir)
++	$(INSTALL) -d -m 755 $(DESTDIR)$(includedir)
++	$(INSTALL) -c -m 644 $(srcdir)/curses.h $(DESTDIR)$(includedir)/xcurses.h
+ 	sed -e 's/#include <curses.h>/#include <xcurses.h>/' < $(srcdir)/panel.h > ./xpanel.h
+-	$(INSTALL) -m 644 ./xpanel.h $(includedir)/xpanel.h
+-	$(INSTALL) -c -m 644 $(pdcursesdir)/libXCurses.a $(libdir)/libXCurses.a
+-	-$(RANLIB) $(libdir)/libXCurses.a
+-	-$(INSTALL) -c -m 555 $(pdcursesdir)/$(SHLPRE)$(SHLFILE)$(SHLPST) $(libdir)/$(SHLPRE)$(SHLFILE)$(SHLPST)
+-	$(INSTALL) -c -m 644 $(paneldir)/libpanel.a $(libdir)/libXpanel.a
+-	-$(RANLIB) $(libdir)/libXpanel.a
+-	$(INSTALL) -c -m 755 ./xcurses-config $(bindir)/xcurses-config
++	$(INSTALL) -m 644 ./xpanel.h $(DESTDIR)$(includedir)/xpanel.h
++	$(INSTALL) -c -m 644 $(pdcursesdir)/libXCurses.a $(DESTDIR)$(libdir)/libXCurses.a
++	-$(RANLIB) $(DESTDIR)$(libdir)/libXCurses.a
++	-$(INSTALL) -c -m 555 $(pdcursesdir)/$(SHLPRE)$(SHLFILE)$(SHLPST) $(DESTDIR)$(libdir)/$(SHLPRE)$(SHLFILE)$(SHLPST)
++	$(INSTALL) -c -m 644 $(paneldir)/libpanel.a $(DESTDIR)$(libdir)/libXpanel.a
++	-$(RANLIB) $(DESTDIR)$(libdir)/libXpanel.a
++	$(INSTALL) -c -m 755 ./xcurses-config $(DESTDIR)$(bindir)/xcurses-config
+ 
+ clean ::
+ 	rm -f config.log config.cache config.status
