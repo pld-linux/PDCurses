@@ -2,7 +2,7 @@ Summary:	Public Domain Curses
 Summary(pl):	Ogólnie dostêpna biblioteka Curses
 Name:		PDCurses
 Version:	2.6
-Release:	2
+Release:	3
 Vendor:		Mark Hessling
 Group:		Libraries
 License:	Public Domain and LGPL
@@ -58,6 +58,7 @@ Statyczna wersja biblioteki PDCurses.
 %patch0
 
 %build
+cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure
 %{__make} \
