@@ -62,7 +62,7 @@ cp -f /usr/share/automake/config.sub .
 %{__autoconf}
 %configure
 %{__make} \
-	LD_RXLIB2="-Wl,-soname=libXCurses.so -L/usr/X11R6/lib -lXaw -lXmu -lXt -lX11"
+	LD_RXLIB2="-Wl,-soname=libXCurses.so -L/usr/X11R6/%{_lib} -lXaw -lXmu -lXt -lX11"
 
 %install
 rm -rf $RPM_BUILD_ROOT
