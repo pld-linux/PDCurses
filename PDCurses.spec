@@ -2,7 +2,7 @@ Summary:	Public Domain Curses
 Summary(pl):	Ogólnie dostêpna biblioteka Curses
 Name:		PDCurses
 Version:	2.6
-Release:	1
+Release:	2
 Vendor:		Mark Hessling
 Group:		Libraries
 License:	Public Domain and LGPL
