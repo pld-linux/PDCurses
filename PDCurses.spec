@@ -13,6 +13,7 @@ Patch1:		%{name}-Makefile.patch
 URL:		http://pdcurses.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -34,7 +35,7 @@ http://pdcurses.sourceforge.net/ .
 Summary:	Header files for PDCurses library
 Summary(pl):	Pliki nag³ówkowe biblioteki PDCurses
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for PDCurses library.
@@ -46,7 +47,7 @@ Pliki nag³ówkowe biblioteki PDCurses.
 Summary:	Static version of PDCurses library
 Summary(pl):	Statyczna wersja biblioteki PDCurses
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of PDCurses library.
