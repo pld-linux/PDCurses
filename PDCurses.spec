@@ -12,7 +12,7 @@ Patch0:		%{name}-DESTDIR.patch
 URL:		http://pdcurses.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
-BuildRoot:      %{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 PDCurses is an implementation of the curses library for X11. It
