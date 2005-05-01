@@ -21,7 +21,7 @@ PDCurses is an implementation of the curses library for X11. It
 provides the ability for existing text-mode curses programs to be
 re-built as native X11 applications with very little modification.
 PDCurses for X11 is also known as XCurses. For more information on
-PDCurses, visit http://pdcurses.sourceforge.net/ .
+PDCurses, visit <http://pdcurses.sourceforge.net/>.
 
 %description -l pl
 PDCurses jest implementacj± biblioteki curses dla X11. Umo¿liwia ona
@@ -29,7 +29,7 @@ przebudowanie istniej±cych programów tekstowych korzystaj±cych z
 curses jako natywne aplikacje X11 po jedynie niewielkich
 modyfikacjach. PDCurses dla X11 jest znana tak¿e jako XCurses. Wiêcej
 informacji na temat PDCurses mo¿na znale¼æ na stronie
-http://pdcurses.sourceforge.net/ .
+<http://pdcurses.sourceforge.net/>.
 
 %package devel
 Summary:	Header files for PDCurses library
