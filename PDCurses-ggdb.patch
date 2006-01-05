@@ -1,0 +1,11 @@
+--- PDCurses-2.6/configure.in~	2002-06-24 10:13:50.000000000 +0200
++++ PDCurses-2.6/configure.in	2006-01-05 02:03:58.000000000 +0100
+@@ -131,7 +131,7 @@
+ 		CFLAGS="${CFLAGS} -O"
+ 	fi
+ 	if test "$cflags_g" != "0"; then
+-		CFLAGS="`echo ${CFLAGS} | sed -e s/-g//`"
++		CFLAGS="`echo ${CFLAGS} | sed -e s/-g\(gdb\)\?//`"
+ 	fi
+ fi
+ if test "$ac_cv_prog_CC" = "gcc"; then

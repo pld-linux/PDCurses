@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/pdcurses/%{name}-%{version}.tar.gz
 # Source0-md5:	a376c91c7fdfa0215f4c22024ca325f1
 Patch0:		%{name}-DESTDIR.patch
 Patch1:		%{name}-Makefile.patch
+Patch2:		%{name}-ggdb.patch
 URL:		http://pdcurses.sourceforge.net/
 BuildRequires:	XFree86-devel
 BuildRequires:	autoconf
@@ -59,6 +60,7 @@ Statyczna wersja biblioteki PDCurses.
 %setup -q
 %patch0
 %patch1 -p1
+%patch2 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .
