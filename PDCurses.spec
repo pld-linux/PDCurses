@@ -1,5 +1,5 @@
 Summary:	Public Domain Curses
-Summary(pl):	Ogólnie dostêpna biblioteka Curses
+Summary(pl.UTF-8):   OgÃ³lnie dostÄ™pna biblioteka Curses
 Name:		PDCurses
 Version:	2.6
 Release:	4
@@ -24,36 +24,36 @@ re-built as native X11 applications with very little modification.
 PDCurses for X11 is also known as XCurses. For more information on
 PDCurses, visit <http://pdcurses.sourceforge.net/>.
 
-%description -l pl
-PDCurses jest implementacj± biblioteki curses dla X11. Umo¿liwia ona
-przebudowanie istniej±cych programów tekstowych korzystaj±cych z
+%description -l pl.UTF-8
+PDCurses jest implementacjÄ… biblioteki curses dla X11. UmoÅ¼liwia ona
+przebudowanie istniejÄ…cych programÃ³w tekstowych korzystajÄ…cych z
 curses jako natywne aplikacje X11 po jedynie niewielkich
-modyfikacjach. PDCurses dla X11 jest znana tak¿e jako XCurses. Wiêcej
-informacji na temat PDCurses mo¿na znale¼æ na stronie
+modyfikacjach. PDCurses dla X11 jest znana takÅ¼e jako XCurses. WiÄ™cej
+informacji na temat PDCurses moÅ¼na znaleÅºÄ‡ na stronie
 <http://pdcurses.sourceforge.net/>.
 
 %package devel
 Summary:	Header files for PDCurses library
-Summary(pl):	Pliki nag³ówkowe biblioteki PDCurses
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe biblioteki PDCurses
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 Header files for PDCurses library.
 
-%description devel -l pl
-Pliki nag³ówkowe biblioteki PDCurses.
+%description devel -l pl.UTF-8
+Pliki nagÅ‚Ã³wkowe biblioteki PDCurses.
 
 %package static
 Summary:	Static version of PDCurses library
-Summary(pl):	Statyczna wersja biblioteki PDCurses
+Summary(pl.UTF-8):   Statyczna wersja biblioteki PDCurses
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static version of PDCurses library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki PDCurses.
 
 %prep
