@@ -1,5 +1,5 @@
 Summary:	Public Domain Curses
-Summary(pl.UTF-8):   Ogólnie dostępna biblioteka Curses
+Summary(pl.UTF-8):	Ogólnie dostępna biblioteka Curses
 Name:		PDCurses
 Version:	2.6
 Release:	4
@@ -34,7 +34,7 @@ informacji na temat PDCurses można znaleźć na stronie
 
 %package devel
 Summary:	Header files for PDCurses library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki PDCurses
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki PDCurses
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 
@@ -46,7 +46,7 @@ Pliki nagłówkowe biblioteki PDCurses.
 
 %package static
 Summary:	Static version of PDCurses library
-Summary(pl.UTF-8):   Statyczna wersja biblioteki PDCurses
+Summary(pl.UTF-8):	Statyczna wersja biblioteki PDCurses
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
